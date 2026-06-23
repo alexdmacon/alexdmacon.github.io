@@ -5,15 +5,27 @@
 }
 
 :root {
-  --accent: #2a4d7a;
-  --accent-hover: #1e3a5f;
-  --text-primary: #1a1a1a;
-  --text-secondary: #555;
-  --text-tertiary: #999;
-  --border: rgba(0, 0, 0, 0.12);
+  --accent: #1a56db;
+  --accent-hover: #1446b8;
+  --text-primary: #111111;
+  --text-secondary: #3a3a3a;
+  --text-tertiary: #777;
+  --border: rgba(0, 0, 0, 0.13);
   --bg: #fff;
+  --bg-secondary: #f7f7f5;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-serif: Georgia, "Times New Roman", serif;
+}
+
+[data-theme="dark"] {
+  --accent: #5b8dee;
+  --accent-hover: #7aa3f3;
+  --text-primary: #ededed;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #6e6e6e;
+  --border: rgba(255, 255, 255, 0.1);
+  --bg: #141414;
+  --bg-secondary: #1e1e1e;
 }
 
 html {
@@ -26,6 +38,7 @@ body {
   background: var(--bg);
   color: var(--text-primary);
   line-height: 1.6;
+  transition: background 0.2s, color 0.2s;
 }
 
 a {
@@ -52,6 +65,12 @@ a:hover {
   align-items: baseline;
   justify-content: space-between;
   margin-bottom: 4rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
 }
 
 .nav-name {
@@ -83,6 +102,33 @@ a:hover {
 .nav-links a.active {
   color: var(--accent);
   text-decoration: none;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-tertiary);
+  font-size: 13px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+}
+
+.theme-toggle svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* Sections */
@@ -239,12 +285,12 @@ a:hover {
   color: var(--text-primary);
   line-height: 1.4;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .blog-title:hover {
   color: var(--accent);
   text-decoration: none;
-  cursor: pointer;
 }
 
 /* Resume */
@@ -363,6 +409,104 @@ a:hover {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+/* Blog post pages */
+
+.post-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin-bottom: 2.5rem;
+  text-decoration: none;
+}
+
+.post-back:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.post-back svg {
+  width: 13px;
+  height: 13px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-date {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.post-title {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+.post-body {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.85;
+}
+
+.post-body p {
+  margin-bottom: 1.4rem;
+}
+
+.post-body p:last-child {
+  margin-bottom: 0;
+}
+
+.post-body a {
+  color: var(--accent);
+}
+
+.post-body h2 {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin: 2rem 0 0.75rem;
+}
+
+.post-body ul,
+.post-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.post-body li {
+  margin-bottom: 0.4rem;
+}
+
+.post-body strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.post-body em {
+  font-style: italic;
+}
+
+.post-body hr {
+  border: none;
+  border-top: 0.5px solid var(--border);
+  margin: 2rem 0;
 }
 
 /* Responsive */

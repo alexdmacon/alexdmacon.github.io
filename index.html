@@ -12,12 +12,18 @@
 <div class="site">
 
   <nav class="nav">
-    <a href="#" class="nav-name" onclick="show('home'); return false;">Alex Macon</a>
+    <div class="nav-left">
+      <a href="#" class="nav-name" onclick="showNav(document.querySelector('.nav-links a'), 'home'); return false;">Alex Macon</a>
+    </div>
     <ul class="nav-links">
       <li><a href="#" class="active" onclick="showNav(this, 'home'); return false;">Home</a></li>
       <li><a href="#" onclick="showNav(this, 'portfolio'); return false;">Portfolio</a></li>
       <li><a href="#" onclick="showNav(this, 'blog'); return false;">Blog</a></li>
       <li><a href="#" onclick="showNav(this, 'resume'); return false;">Resume</a></li>
+      <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button></li>
     </ul>
   </nav>
 
@@ -26,9 +32,9 @@
     <div class="home-bio">
       <img class="headshot" src="headshot.jpg" alt="Alex Macon" />
       <div class="bio-text">
-        <h1>Communications specialist telling stories that connect.</h1>
-        <p>In a career spanning higher education, corporate communications, content marketing, and journalism, I've worked on everything from in-depth reported features to strategic messaging for executive leadership — whatever it takes to tell a good story.</p>
-        <p>I am currently the communications manager for the <a href="https://engineering.utdallas.edu">Erik Jonsson School of Engineering and Computer Science</a> at UT Dallas, where I help oversee content strategy, public relations, and the school's flagship magazine, <a href="https://engineering-magazine.utdallas.edu/"><em>Voyager</em></a>. My work has also supported organizations including Public Storage, Truist Financial, and Southwest Airlines. As a writer and editor, I've contributed to D Magazine, The Dallas Morning News, and Texas Monthly.</p>
+        <h1>Communications pro telling stories that connect.</h1>
+        <p>I've spent my career in the gap between storytelling and strategy — writing reported features, producing podcasts, editing magazines, and advising executives on how to say something worth saying.</p>
+        <p>I'm currently the communications manager for the <a href="https://engineering.utdallas.edu">Erik Jonsson School of Engineering and Computer Science</a> at UT Dallas, where I help direct content strategy, public relations, and the school's flagship magazine, <a href="https://engineering-magazine.utdallas.edu/"><em>Voyager</em></a>. I've also done this kind of work for Public Storage, Truist Financial, and Southwest Airlines, and as a writer and editor I've contributed to D Magazine, The Dallas Morning News, and Texas Monthly.</p>
       </div>
     </div>
   </section>
@@ -61,7 +67,7 @@
         <span class="portfolio-item-tag">Video</span>
         <div>
           <div class="portfolio-item-title"><a href="https://www.youtube.com/watch?v=65aFg8kqnHA" target="_blank" rel="noopener">It's great to be orange</a></div>
-          <div class="portfolio-item-desc">Employee engagement video produced as part of internal communications campaigns driving culture and brand storytelling across 3,000+ facilities.</div>
+          <div class="portfolio-item-desc">Employee engagement video produced as part of internal campaigns driving culture and brand storytelling across 3,000+ facilities.</div>
         </div>
       </div>
       <div class="portfolio-item">
@@ -147,7 +153,7 @@
         </div>
       </div>
       <div class="portfolio-item">
-        <span class="portfolio-item-tag">Arts & culture</span>
+        <span class="portfolio-item-tag">Arts &amp; culture</span>
         <div>
           <div class="portfolio-item-title"><a href="https://www.dmagazine.com/arts-entertainment/2017/03/how-rock-n-roll-history-was-made-and-nearly-forgotten-in-dallas/" target="_blank" rel="noopener">Sid King and the Five Strings</a></div>
           <div class="portfolio-item-desc">The Dallas-area band that played alongside Elvis Presley before fading into near-obscurity.</div>
@@ -165,7 +171,7 @@
     <div class="portfolio-group">
       <div class="portfolio-group-label">Freelance — Texas Monthly · D Magazine &nbsp;·&nbsp; 2020–2022</div>
       <div class="portfolio-item">
-        <span class="portfolio-item-tag">Science & tech</span>
+        <span class="portfolio-item-tag">Science &amp; tech</span>
         <div>
           <div class="portfolio-item-title"><a href="https://www.texasmonthly.com/news-politics/spacex-rockets-launch-labpadre-livestream/" target="_blank" rel="noopener">The guy who livestreams SpaceX rockets</a></div>
           <div class="portfolio-item-desc">The story of LabPadre, the livestreamer who turned watching SpaceX test rockets into a global obsession.</div>
@@ -206,31 +212,31 @@
     <div class="blog-list">
       <div class="blog-item">
         <span class="blog-date">Jun 15, 2026</span>
-        <span class="blog-title">The selfish case for children</span>
+        <a href="blog/selfish-case-for-children.html" class="blog-title">The selfish case for children</a>
       </div>
       <div class="blog-item">
         <span class="blog-date">Jun 5, 2026</span>
-        <span class="blog-title">An autobiography in 25 books</span>
+        <a href="blog/autobiography-in-25-books.html" class="blog-title">An autobiography in 25 books</a>
       </div>
       <div class="blog-item">
         <span class="blog-date">May 26, 2026</span>
-        <span class="blog-title">Kill the whales — or, what the Grateful Dead can teach us about the future of downtown Dallas</span>
+        <a href="blog/kill-the-whales.html" class="blog-title">Kill the whales — or, what the Grateful Dead can teach us about the future of downtown Dallas</a>
       </div>
       <div class="blog-item">
         <span class="blog-date">Apr 29, 2026</span>
-        <span class="blog-title">AI writing for hacks 101</span>
+        <a href="blog/ai-writing-for-hacks.html" class="blog-title">AI writing for hacks 101</a>
       </div>
       <div class="blog-item">
         <span class="blog-date">Apr 10, 2026</span>
-        <span class="blog-title"><em>The Skull</em>: a children's book</span>
+        <a href="blog/the-skull.html" class="blog-title"><em>The Skull</em>: a children's book</a>
       </div>
       <div class="blog-item">
         <span class="blog-date">Apr 4, 2026</span>
-        <span class="blog-title">The Martian buried in Aurora, Texas</span>
+        <a href="blog/martian-buried-in-aurora.html" class="blog-title">The Martian buried in Aurora, Texas</a>
       </div>
       <div class="blog-item">
         <span class="blog-date">Apr 2, 2026</span>
-        <span class="blog-title">Chasing enlightenment on U.S. 75</span>
+        <a href="blog/chasing-enlightenment-on-75.html" class="blog-title">Chasing enlightenment on U.S. 75</a>
       </div>
     </div>
   </section>
@@ -244,7 +250,6 @@
 
     <div class="res-block">
       <div class="res-block-label">Experience</div>
-
       <div class="res-entry">
         <span class="res-role">Communications Manager</span>
         <span class="res-date">Sep 2025–present</span>
@@ -256,7 +261,6 @@
           <li>Oversee a team of student workers including web developers, graphic designers, and writers.</li>
         </ul>
       </div>
-
       <div class="res-entry">
         <span class="res-role">Internal Communications Specialist</span>
         <span class="res-date">May 2024–Sep 2025</span>
@@ -267,7 +271,6 @@
           <li>Drove brand storytelling through video, intranet content, town halls, and events.</li>
         </ul>
       </div>
-
       <div class="res-entry">
         <span class="res-role">Senior Editor</span>
         <span class="res-date">Aug 2018–Mar 2020 · Jun 2022–May 2024</span>
@@ -278,14 +281,12 @@
           <li>Edited Southwest's in-flight magazine for a monthly circulation of 1M+ readers.</li>
         </ul>
       </div>
-
       <div class="res-entry">
         <span class="res-role">Freelance Writer and Editor</span>
         <span class="res-date">Mar 2020–Jun 2022</span>
         <span class="res-org">Self-employed · Dallas, TX</span>
         <p class="res-inline">Wrote and edited stories for The Dallas Morning News, Texas Monthly, and other publications.</p>
       </div>
-
       <div class="res-entry">
         <span class="res-role">Online Managing Editor</span>
         <span class="res-date">Jan 2015–Aug 2018</span>
@@ -323,19 +324,34 @@
 
 <script>
   function show(id) {
-    document.querySelectorAll('.section').forEach(function(s) {
-      s.classList.remove('active');
-    });
+    document.querySelectorAll('.section').forEach(function(s) { s.classList.remove('active'); });
     document.getElementById(id).classList.add('active');
   }
 
   function showNav(link, id) {
     show(id);
-    document.querySelectorAll('.nav-links a').forEach(function(a) {
-      a.classList.remove('active');
-    });
+    document.querySelectorAll('.nav-links a').forEach(function(a) { a.classList.remove('active'); });
     link.classList.add('active');
   }
+
+  function toggleTheme() {
+    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
+    document.querySelector('.icon-sun').style.display = isDark ? '' : 'none';
+    document.querySelector('.icon-moon').style.display = isDark ? 'none' : '';
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  }
+
+  (function() {
+    var saved = localStorage.getItem('theme');
+    if (saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.icon-sun').style.display = 'none';
+        document.querySelector('.icon-moon').style.display = '';
+      });
+    }
+  })();
 </script>
 
 </body>

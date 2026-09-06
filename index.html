@@ -3,23 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alex Macon — communications specialist, writer, and editor based in Dallas, Texas." />
-  <title>Alex Macon</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Blog — Alex Macon" />
+  <title>Blog — Alex Macon</title>
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-
 <div class="site">
-
   <nav class="nav">
-    <div class="nav-left">
-      <a href="#" class="nav-name" onclick="showNav(document.querySelector('.nav-links a'), 'home'); return false;">Alex Macon</a>
-    </div>
+    <a href="../index.html" class="nav-name">Alex Macon</a>
     <ul class="nav-links">
-      <li><a href="#" class="active" onclick="showNav(this, 'home'); return false;">Home</a></li>
-      <li><a href="#" onclick="showNav(this, 'portfolio'); return false;">Portfolio</a></li>
-      <li><a href="#" onclick="showNav(this, 'blog'); return false;">Blog</a></li>
-      <li><a href="#" onclick="showNav(this, 'resume'); return false;">Resume</a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#portfolio">Portfolio</a></li>
+      <li><a href="../index.html#resume">Resume</a></li>
+      <li><a href="../blog/" class="active">Blog</a></li>
       <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
         <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -27,280 +23,46 @@
     </ul>
   </nav>
 
-  <!-- HOME -->
-  <section id="home" class="section active">
-    <div class="home-bio">
-      <img class="headshot" src="headshot.jpg" alt="Alex Macon" />
-      <div class="bio-text">
-        <h1>Communications pro telling stories that connect.</h1>
-        <p>I've spent my career in the gap between storytelling and strategy: writing reported features, producing podcasts, editing magazines, and advising executives on how to say something worth saying.</p>
-        <p>I'm currently the communications manager for the <a href="https://engineering.utdallas.edu/">Erik Jonsson School of Engineering and Computer Science</a> at UT Dallas, where I help direct content strategy, marketing, and public relations. I've also done this kind of work for agencies and organizations such as Public Storage, Truist Financial, and Southwest Airlines. As a writer and editor, I've contributed to publications including D Magazine and The Dallas Morning News.</p>
-      </div>
+  <div class="section-title">Blog</div>
+  <p class="blog-intro">Sometimes I write for a living, sometimes I write just for fun.</p>
+  <div class="blog-list">
+    <div class="blog-item">
+      <span class="blog-date">Sep 4, 2026</span>
+      <a href="ready-for-some-football.html" class="blog-title">Ready for some football</a>
     </div>
-  </section>
-
-  <!-- PORTFOLIO -->
-  <section id="portfolio" class="section">
-    <div class="section-title">Portfolio</div>
-
-    <div class="portfolio-group">
-      <div class="portfolio-group-label">UT Dallas — Jonsson School of Engineering &nbsp;·&nbsp; 2025–present</div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Magazine</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://engineering-magazine.utdallas.edu/" target="_blank" rel="noopener">Voyager — the Jonsson School magazine</a></div>
-          <div class="portfolio-item-desc">Annual flagship publication covering research, faculty, and alumni stories for one of Texas's top engineering schools.</div>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Video &amp; social</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://www.youtube.com/watch?v=pePgNdMxbQs" target="_blank" rel="noopener">Jonsson School program promotion</a></div>
-          <div class="portfolio-item-desc">Video and social content produced to promote school programs, demonstrating the content strategy and production work behind the Jonsson School's brand.</div>
-        </div>
-      </div>
+    <div class="blog-item">
+      <span class="blog-date">Aug 5, 2026</span>
+      <a href="chronovisor.html" class="blog-title"><em>Chronovisor</em> (2026): through a screen, darkly</a>
     </div>
-
-    <div class="portfolio-group">
-      <div class="portfolio-group-label">Public Storage &nbsp;·&nbsp; 2024–2025</div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Video</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://www.youtube.com/watch?v=65aFg8kqnHA" target="_blank" rel="noopener">It's great to be orange</a></div>
-          <div class="portfolio-item-desc">Employee engagement video produced as part of internal campaigns driving culture and brand storytelling across 3,000+ facilities.</div>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Brand content</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://www.publicstorage.com/blog/public-storage/public-storage-supports-military-spouses-and-the-aloha-spirit-in-hawaii.html" target="_blank" rel="noopener">Supporting military spouses and the aloha spirit in Hawaii</a></div>
-          <div class="portfolio-item-desc">Brand story highlighting Public Storage's community partnership with military spouse employment programs in Hawaii.</div>
-        </div>
-      </div>
+    <div class="blog-item">
+      <span class="blog-date">Jun 15, 2026</span>
+      <a href="selfish-case-for-children.html" class="blog-title">The selfish case for children</a>
     </div>
-
-    <div class="portfolio-group">
-      <div class="portfolio-group-label">Truist Financial — via Pace Communications &nbsp;·&nbsp; 2022–2024</div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Podcast</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://podcasts.apple.com/us/podcast/money-and-mindset-with-bright-and-brian/id1553527151" target="_blank" rel="noopener">Money and Mindset podcast</a></div>
-          <div class="portfolio-item-desc">Scripted and produced a personal finance podcast that regularly ranked in Spotify's top 10%, part of a broader content platform — articles, videos, and interactive tools — earning 100M+ impressions.</div>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">White paper</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://www.truist.com/content/dam/truist-bank/us/en/documents/article/wealth/navigating-pivotal-moments-purple-paper.pdf" target="_blank" rel="noopener">Navigating pivotal moments</a></div>
-          <div class="portfolio-item-desc">Wealth management strategy for Truist's financial advisory clients.</div>
-        </div>
-      </div>
+    <div class="blog-item">
+      <span class="blog-date">Jun 5, 2026</span>
+      <a href="autobiography-in-25-books.html" class="blog-title">An autobiography in 25 books</a>
     </div>
-
-    <div class="portfolio-group">
-      <div class="portfolio-group-label">Southwest Airlines — via Pace Communications &nbsp;·&nbsp; 2018–2020</div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Feature profile</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://clippingsme-assets-1.s3.amazonaws.com/cuttingpdfs/1098014/cde24f1a734f84c90c825855a7a82c03.pdf" target="_blank" rel="noopener">The man who's mowing the world</a></div>
-          <div class="portfolio-item-desc">Rodney Smith Jr. travels all 50 states cutting grass for people who can't afford a service — and teaching kids to give back.</div>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Feature profile</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://clippingsme-assets-1.s3.amazonaws.com/cuttingpdfs/1098013/94cbd413cad8dd9c304ed89f0449ea16.pdf" target="_blank" rel="noopener">Dairy queen</a></div>
-          <div class="portfolio-item-desc">Sarah Pratt sculpts the world's most famous butter cow each summer at the Iowa State Fair.</div>
-        </div>
-      </div>
+    <div class="blog-item">
+      <span class="blog-date">May 26, 2026</span>
+      <a href="kill-the-whales.html" class="blog-title">Kill the whales — or, what the Grateful Dead can teach us about the future of downtown Dallas</a>
     </div>
-
-    <div class="portfolio-group">
-      <div class="portfolio-group-label">D Magazine &nbsp;·&nbsp; 2015–2018</div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Urban affairs</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://www.dmagazine.com/publications/d-magazine/2021/july/parks-for-downtown-dallas-harwood-carpenter-pacific-west-end/" target="_blank" rel="noopener">Parks for Downtown Dallas</a></div>
-          <div class="portfolio-item-desc">How one nonprofit is transforming the city's urban core by replacing parking lots with parks.</div>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Nature</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://www.dmagazine.com/publications/d-magazine/2017/march/wild-dallas-trinity-river-guide-dallas/a-city-kid-learns-theres-more-to-dallas-than-just-concrete-dallas-trinity-river/" target="_blank" rel="noopener">A city kid learns there's more to Dallas than concrete</a></div>
-          <div class="portfolio-item-desc">A personal exploration of the Trinity River — the wild, unexpected natural world running through the middle of the city.</div>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Arts &amp; culture</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://www.dmagazine.com/arts-entertainment/2017/03/how-rock-n-roll-history-was-made-and-nearly-forgotten-in-dallas/" target="_blank" rel="noopener">Sid King and the Five Strings</a></div>
-          <div class="portfolio-item-desc">The Dallas-area band that played alongside Elvis Presley before fading into near-obscurity.</div>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Business</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://www.dmagazine.com/publications/d-magazine/2018/june/warstic-baseball-deep-ellum/" target="_blank" rel="noopener">Warstic at bat</a></div>
-          <div class="portfolio-item-desc">Jack White, Ian Kinsler, and a Lake Highlands designer putting the romance back in baseball, one hand-crafted bat at a time.</div>
-        </div>
-      </div>
+    <div class="blog-item">
+      <span class="blog-date">Apr 29, 2026</span>
+      <a href="ai-writing-for-hacks.html" class="blog-title">AI writing for hacks 101</a>
     </div>
-
-    <div class="portfolio-group">
-      <div class="portfolio-group-label">Freelance — Texas Monthly &nbsp;·&nbsp; D Magazine &nbsp;·&nbsp; 2020–2022</div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Science &amp; tech</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://www.texasmonthly.com/news-politics/spacex-rockets-launch-labpadre-livestream/" target="_blank" rel="noopener">The guy who livestreams SpaceX rockets</a></div>
-          <div class="portfolio-item-desc">The story of LabPadre, the livestreamer who turned watching SpaceX test rockets into a global obsession.</div>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Public health</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://www.texasmonthly.com/news-politics/covid-19-vaccines-texas-public-health/" target="_blank" rel="noopener">Inside Texas's COVID vaccine rollout</a></div>
-          <div class="portfolio-item-desc">A reported look at the chaos, challenges, and decisions shaping how Texas distributed its first COVID-19 vaccines.</div>
-        </div>
-      </div>
+    <div class="blog-item">
+      <span class="blog-date">Apr 10, 2026</span>
+      <a href="the-skull.html" class="blog-title"><em>The Skull</em>: a children's book</a>
     </div>
-
-    <div class="portfolio-group">
-      <div class="portfolio-group-label">Higher education writing — SMU &nbsp;·&nbsp; UT Southwestern</div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Science</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://clippingsme-assets-1.s3.amazonaws.com/cuttingpdfs/1098015/7f468da7ffdb14a07ce43eecd3dde8ea.pdf" target="_blank" rel="noopener">The gene genie</a></div>
-          <div class="portfolio-item-desc">Dr. Eric Olson uses CRISPR gene-editing technology to pursue a cure for Duchenne muscular dystrophy at UT Southwestern.</div>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <span class="portfolio-item-tag">Higher ed</span>
-        <div>
-          <div class="portfolio-item-title"><a href="https://www.smu.edu/cox/coxtoday-magazine/2021-06-07-new-career-management-center" target="_blank" rel="noopener">SMU Cox School — career management center</a></div>
-          <div class="portfolio-item-desc">Feature on the Cox School's revamped career management center and the leadership driving it.</div>
-        </div>
-      </div>
+    <div class="blog-item">
+      <span class="blog-date">Apr 4, 2026</span>
+      <a href="martian-buried-in-aurora.html" class="blog-title">The Martian buried in Aurora, Texas</a>
     </div>
-  </section>
-
-  <!-- BLOG -->
-  <section id="blog" class="section">
-    <div class="section-title">Blog</div>
-    <p class="blog-intro">Sometimes I write for a living, sometimes I write just for fun.</p>
-    <div class="blog-list">
-      <div class="blog-item">
-        <span class="blog-date">Sep 4, 2026</span>
-        <a href="blog/ready-for-some-football.html" class="blog-title">Ready for some football</a>
-      </div>
-      <div class="blog-item">
-        <span class="blog-date">Aug 5, 2026</span>
-        <a href="blog/chronovisor.html" class="blog-title"><em>Chronovisor</em> (2026): through a screen, darkly</a>
-      </div>
-      <div class="blog-item">
-        <span class="blog-date">Jun 15, 2026</span>
-        <a href="blog/selfish-case-for-children.html" class="blog-title">The selfish case for children</a>
-      </div>
-      <div class="blog-item">
-        <span class="blog-date">Jun 5, 2026</span>
-        <a href="blog/autobiography-in-25-books.html" class="blog-title">An autobiography in 25 books</a>
-      </div>
-      <div class="blog-item">
-        <span class="blog-date">May 26, 2026</span>
-        <a href="blog/kill-the-whales.html" class="blog-title">Kill the whales — or, what the Grateful Dead can teach us about the future of downtown Dallas</a>
-      </div>
-      <div class="blog-item">
-        <span class="blog-date">Apr 29, 2026</span>
-        <a href="blog/ai-writing-for-hacks.html" class="blog-title">AI writing for hacks 101</a>
-      </div>
-      <div class="blog-item">
-        <span class="blog-date">Apr 10, 2026</span>
-        <a href="blog/the-skull.html" class="blog-title"><em>The Skull</em>: a children's book</a>
-      </div>
-      <div class="blog-item">
-        <span class="blog-date">Apr 4, 2026</span>
-        <a href="blog/martian-buried-in-aurora.html" class="blog-title">The Martian buried in Aurora, Texas</a>
-      </div>
-      <div class="blog-item">
-        <span class="blog-date">Apr 2, 2026</span>
-        <a href="blog/chasing-enlightenment-on-75.html" class="blog-title">Chasing enlightenment on U.S. 75</a>
-      </div>
+    <div class="blog-item">
+      <span class="blog-date">Apr 2, 2026</span>
+      <a href="chasing-enlightenment-on-75.html" class="blog-title">Chasing enlightenment on U.S. 75</a>
     </div>
-  </section>
-
-  <!-- RESUME -->
-  <section id="resume" class="section">
-    <a class="download-link" href="alex-macon-resume.pdf" download>
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3m0 12-4-4m4 4 4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"/></svg>
-      Download PDF
-    </a>
-
-    <div class="res-block">
-      <div class="res-block-label">Experience</div>
-      <div class="res-entry">
-        <span class="res-role">Communications Manager</span>
-        <span class="res-date">Sep 2025–present</span>
-        <span class="res-org">UT Dallas — Jonsson School of Engineering and Computer Science · Richardson, TX</span>
-        <ul class="res-bullets">
-          <li>Lead communications, marketing, and PR strategy, including crisis communications and executive messaging.</li>
-          <li>Produce <em>Voyager</em>, the school's annual flagship magazine.</li>
-          <li>Develop annual reports; write speeches and strategic messaging for school leadership.</li>
-          <li>Oversee a team of student workers including web developers, graphic designers, and writers.</li>
-        </ul>
-      </div>
-      <div class="res-entry">
-        <span class="res-role">Internal Communications Specialist</span>
-        <span class="res-date">May 2024–Sep 2025</span>
-        <span class="res-org">Public Storage · Plano, TX</span>
-        <ul class="res-bullets">
-          <li>Partnered with senior leaders on multi-platform campaigns for 6,000 employees across 3,000+ facilities.</li>
-          <li>Ghostwrote messages and advised on communications strategy for executives.</li>
-          <li>Drove brand storytelling through video, intranet content, town halls, and events.</li>
-        </ul>
-      </div>
-      <div class="res-entry">
-        <span class="res-role">Senior Editor</span>
-        <span class="res-date">Aug 2018–Mar 2020 · Jun 2022–May 2024</span>
-        <span class="res-org">Pace Communications · Dallas, TX</span>
-        <ul class="res-bullets">
-          <li>Developed campaigns across print, web, and social for Truist Financial and Southwest Airlines.</li>
-          <li>Led creative for Truist verticals — content hubs, annual reports, video series, and podcasts earning 100M+ impressions.</li>
-          <li>Edited Southwest's in-flight magazine for a monthly circulation of 1M+ readers.</li>
-        </ul>
-      </div>
-      <div class="res-entry">
-        <span class="res-role">Freelance Writer and Editor</span>
-        <span class="res-date">Mar 2020–Jun 2022</span>
-        <span class="res-org">Self-employed · Dallas, TX</span>
-        <p class="res-inline">Wrote and edited stories for The Dallas Morning News, Texas Monthly, and other publications.</p>
-      </div>
-      <div class="res-entry">
-        <span class="res-role">Online Managing Editor</span>
-        <span class="res-date">Jan 2015–Aug 2018</span>
-        <span class="res-org">D Magazine · Dallas, TX</span>
-        <p class="res-inline">Wrote, assigned, and edited stories while managing editorial calendars, social media, and newsletter campaigns.</p>
-      </div>
-    </div>
-
-    <div class="res-block">
-      <div class="res-block-label">Education</div>
-      <div class="res-entry">
-        <span class="res-role">University of North Texas</span>
-        <span class="res-date">Denton, TX</span>
-        <span class="res-org">Bachelor of Arts — journalism and political science</span>
-      </div>
-    </div>
-
-    <div class="res-block">
-      <div class="res-block-label">Skills</div>
-      <div class="skills-list">
-        Digital content strategy and social media · WordPress, SharePoint, Google Analytics<br>
-        Executive communications and ghostwriting · email marketing and audience development<br>
-        AI-assisted content development and workflow automation · Canva and Adobe suite<br>
-        Microsoft Office · Workfront and Jira
-      </div>
-    </div>
-  </section>
+  </div>
 
   <footer class="footer">
     <p>Dallas, Texas</p>
@@ -309,21 +71,9 @@
       <a href="https://www.linkedin.com/in/alexdmacon/" target="_blank" rel="noopener" class="footer-linkedin" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="LinkedIn" width="14" height="14"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
     </div>
   </footer>
-
 </div>
 
 <script>
-  function show(id) {
-    document.querySelectorAll('.section').forEach(function(s) { s.classList.remove('active'); });
-    document.getElementById(id).classList.add('active');
-  }
-
-  function showNav(link, id) {
-    show(id);
-    document.querySelectorAll('.nav-links a').forEach(function(a) { a.classList.remove('active'); });
-    link.classList.add('active');
-  }
-
   function toggleTheme() {
     var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
@@ -331,7 +81,6 @@
     document.querySelector('.icon-moon').style.display = isDark ? 'none' : '';
     localStorage.setItem('theme', isDark ? 'light' : 'dark');
   }
-
   (function() {
     var saved = localStorage.getItem('theme');
     if (saved === 'dark') {
@@ -343,6 +92,5 @@
     }
   })();
 </script>
-
 </body>
 </html>

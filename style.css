@@ -314,6 +314,9 @@ a:hover {
 
 .download-link:hover {
   text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 .download-link svg {
@@ -421,6 +424,13 @@ a:hover {
   color: var(--accent);
 }
 
+.footer a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
 .footer-linkedin {
   display: flex;
   align-items: center;
@@ -437,13 +447,6 @@ a:hover {
   width: 14px;
   height: 14px;
   fill: currentColor;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
 }
 
 /* Blog post pages */
